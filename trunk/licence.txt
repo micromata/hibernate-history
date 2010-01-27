@@ -1,0 +1,17 @@
+The license of Hibernate History
+
+When software is released to the public, it must be provided under a license. There are numerous licenses to choose from: Public domain, GPL, LGPL, BSD, Apache, Eclipse Public, Mozilla Public and the WTFPL license. Choosing the right license for this software requires great patience and insight regarding legal jargon.
+
+In the end, the 3-clause BSD license was chosen for Hibernate History. The 3-clause BSD (also called the BSD-new or revised BSD) is a variant of the original BSD license. The variant uses only – as the name implies – three major clauses from the original clause. These three clauses state that software under the BSD license may be used freely as well as copied, modified and distributed. The fourth clause of the original BSD is called the "advertising clause"; which does not apply in this case. It requires software developers of all works derived from BSD licensed software to name and acknowledge the original source explicitly. The only condition of the BSD license is that the copyright notice of the original program must not be removed. Thus, the BSD software license is also suitable for commercial software products. In sum, the BSD license contains a general disclaimer and explicitly identifies the author. Further, it can be used, copied, modified and redistributed freely, for commercial and non-commercial purposes.
+BSD license
+
+Copyright (c) 2009, Micromata GmbH
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+   1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+   3. Neither the name of the Micromata GmbH nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY Micromata GmbH ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL Micromata GmbH BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
