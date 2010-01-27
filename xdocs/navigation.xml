@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE project [
+<!ELEMENT project (title,body)>
+<!ATTLIST project 
+  name CDATA #REQUIRED
+>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT body (menu)>
+<!ELEMENT menu (item*) >
+<!ELEMENT item EMPTY >
+
+<!ATTLIST menu 
+  name CDATA #REQUIRED
+>
+<!ATTLIST item 
+  name CDATA #REQUIRED
+  href CDATA #REQUIRED
+>
+]>
+<project name="Hibernate History">
+
+  <title>Änderungshistorie über Hibernate Interceptor</title>
+  <body>
+    <menu name="HowTo">
+      <item name="Konfiguration"            href="/index.html"/>
+    </menu>
+  </body>
+</project>

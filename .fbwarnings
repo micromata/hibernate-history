@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="0.9.3" sequence="0" timestamp="-1" release="">
+  <Project filename="&lt;&lt;unnamed project&gt;&gt;">
+    <Jar>/home/wolle/workspace/HibernateHistory/target/classes/de/micromata/hibernate/DeltaSetCalculator$1.class</Jar>
+    <Jar>/home/wolle/workspace/HibernateHistory/target/classes/de/micromata/hibernate/DeltaSetCalculator$2.class</Jar>
+    <Jar>/home/wolle/workspace/HibernateHistory/target/classes/de/micromata/hibernate/DeltaSetCalculator.class</Jar>
+    <AuxClasspathEntry>/home/wolle/workspace/HibernateHistory/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/commons-collections/jars/commons-collections-3.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/commons-dbcp/jars/commons-dbcp-1.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/commons-logging/jars/commons-logging-1.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/commons-pool/jars/commons-pool-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/commons-digester/jars/commons-digester-1.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/concurrent/jars/concurrent-1.3.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/junit/jars/junit-3.8.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/log4j/jars/log4j-1.2.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/jta/jars/jta-1.0.1B.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/odmg/jars/odmg-3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/xstream/jars/xstream-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/commons-lang/jars/commons-lang-2.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/commons-beanutils/jars/commons-beanutils-1.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/tomcat/jars/jsp-api-5.0.18.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/tomcat/jars/servlet-api-5.0.18.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/antlr/jars/antlr-2.7.6rc1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/asm/jars/asm-1.5.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/asm/jars/asm-attrs-1.5.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/cglib/jars/cglib-2.1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/dom4j/jars/dom4j-1.6.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/ehcache/jars/ehcache-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/ejb/jars/ejb3-persistence.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/hibernate/jars/hibernate-3.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/hibernate/jars/hibernate-annotations-3.1beta7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/hsqldb/jars/hsqldb-1.8.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/springframework/jars/spring-1.2.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/wolle/.maven/repository/xpp3/jars/xpp3-1.1.2a.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="3" abbrev="NP" category="STYLE" uid="182">
+    <Class classname="de.micromata.hibernate.DeltaSetCalculator"/>
+    <Method classname="de.micromata.hibernate.DeltaSetCalculator" name="getDeltaOrNull" signature="(Lorg/hibernate/SessionFactory;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Object;)Lde/micromata/hibernate/PropertyDelta;" isStatic="true">
+      <SourceLine classname="de.micromata.hibernate.DeltaSetCalculator" start="193" end="221" startBytecode="0" endBytecode="108" opcodes="" sourcefile="DeltaSetCalculator.java"/>
+    </Method>
+    <SourceLine classname="de.micromata.hibernate.DeltaSetCalculator" start="198" end="198" startBytecode="62" endBytecode="62" opcodes="42,43,44,45,25|25|184,58,167,44,182" sourcefile="DeltaSetCalculator.java"/>
+  </BugInstance>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="3" abbrev="NP" category="STYLE" uid="183">
+    <Class classname="de.micromata.hibernate.DeltaSetCalculator"/>
+    <Method classname="de.micromata.hibernate.DeltaSetCalculator" name="getDeltaOrNull" signature="(Lorg/hibernate/SessionFactory;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Object;)Lde/micromata/hibernate/PropertyDelta;" isStatic="true">
+      <SourceLine classname="de.micromata.hibernate.DeltaSetCalculator" start="193" end="221" startBytecode="0" endBytecode="108" opcodes="" sourcefile="DeltaSetCalculator.java"/>
+    </Method>
+    <SourceLine classname="de.micromata.hibernate.DeltaSetCalculator" start="201" end="201" startBytecode="93" endBytecode="93" opcodes="42,43,44,45,25|25|184,58,167,42,44" sourcefile="DeltaSetCalculator.java"/>
+  </BugInstance>
+  <BugInstance type="UPM_UNCALLED_PRIVATE_METHOD" priority="3" abbrev="UPM" category="PERFORMANCE" uid="184">
+    <Class classname="de.micromata.hibernate.DeltaSetCalculator"/>
+    <Method classname="de.micromata.hibernate.DeltaSetCalculator" name="convertMap" signature="(Lorg/hibernate/SessionFactory;Ljava/util/Map;)Ljava/util/Map;" isStatic="true">
+      <SourceLine classname="de.micromata.hibernate.DeltaSetCalculator" start="254" end="262" startBytecode="0" endBytecode="30" opcodes="" sourcefile="DeltaSetCalculator.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="ITA_INEFFICIENT_TO_ARRAY" priority="3" abbrev="ITA" category="PERFORMANCE" uid="118">
+    <Class classname="de.micromata.hibernate.HistoryAdapter"/>
+    <Method classname="de.micromata.hibernate.HistoryAdapter" name="getHistoryEntries" signature="(Ljava/lang/Class;Ljava/lang/Number;Lorg/hibernate/Session;)[Lde/micromata/hibernate/HistoryEntry;" isStatic="false">
+      <SourceLine classname="de.micromata.hibernate.HistoryAdapter" start="62" end="70" startBytecode="0" endBytecode="103" opcodes="" sourcefile="HistoryAdapter.java"/>
+    </Method>
+    <SourceLine classname="de.micromata.hibernate.HistoryAdapter" start="70" end="70" startBytecode="92" endBytecode="92" opcodes="" sourcefile="HistoryAdapter.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE" uid="119">
+    <Class classname="de.micromata.hibernate.HistoryAdapter"/>
+    <Field classname="de.micromata.hibernate.HistoryAdapter" name="template" signature="Lorg/springframework/orm/hibernate3/HibernateTemplate;" isStatic="false"/>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE" uid="120">
+    <Class classname="de.micromata.hibernate.HistoryAdapter"/>
+    <Field classname="de.micromata.hibernate.HistoryAdapter" name="tx" signature="Lorg/springframework/transaction/support/TransactionTemplate;" isStatic="false"/>
+  </BugInstance>
+  <BugInstance type="RI_REDUNDANT_INTERFACES" priority="3" abbrev="RI" category="STYLE" uid="142">
+    <Class classname="de.micromata.hibernate.HistoryInterceptor"/>
+    <Class classname="org.hibernate.Interceptor" role="INTERFACE_TYPE"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" abbrev="SIC" category="PERFORMANCE" uid="143">
+    <Class classname="de.micromata.hibernate.HistoryInterceptor$1"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE" uid="112">
+    <Class classname="de.micromata.hibernate.web.HistoryTable"/>
+    <Method classname="de.micromata.hibernate.web.HistoryTable" name="getHistoryList" signature="([Ljava/lang/Object;Ljava/util/Locale;)Ljava/util/Collection;" isStatic="false">
+      <SourceLine classname="de.micromata.hibernate.web.HistoryTable" start="125" end="142" startBytecode="0" endBytecode="45" opcodes="" sourcefile="HistoryTable.java"/>
+    </Method>
+    <LocalVariable name="historyList" register="3" pc="36" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="de.micromata.hibernate.web.HistoryTable" start="125" end="125" startBytecode="35" endBytecode="35" opcodes="89,18,183,184,183|78|187,89,183,58,25" sourcefile="HistoryTable.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" abbrev="REC" category="STYLE" uid="113">
+    <Class classname="de.micromata.hibernate.web.HistoryTable"/>
+    <Method classname="de.micromata.hibernate.web.HistoryTable" name="retrieveChangedObject" signature="(Lorg/hibernate/Session;Lde/micromata/hibernate/HistoryEntry;)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="de.micromata.hibernate.web.HistoryTable" start="194" end="205" startBytecode="0" endBytecode="107" opcodes="" sourcefile="HistoryTable.java"/>
+    </Method>
+    <SourceLine classname="de.micromata.hibernate.web.HistoryTable" start="202" end="202" startBytecode="82" endBytecode="82" opcodes="45,44,182,185,176|78|178,187,89,19,183" sourcefile="HistoryTable.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE" uid="114">
+    <Class classname="de.micromata.hibernate.web.HistoryTableEntry"/>
+    <Field classname="de.micromata.hibernate.web.HistoryTableEntry" name="date" signature="Ljava/util/Date;" isStatic="false"/>
+  </BugInstance>
+  <Errors></Errors>
+  <FindBugsSummary timestamp="Sun, 16 Oct 2005 10:52:39 +0200" total_classes="8" total_bugs="12" total_size="0" num_packages="2" priority_3="11" priority_2="1">
+    <PackageStats package="de.micromata.hibernate.web" total_bugs="2" total_types="2" total_size="0" priority_3="2">
+      <ClassStats class="de.micromata.hibernate.web.HistoryTable" interface="false" size="0" bugs="1" priority_3="1"/>
+      <ClassStats class="de.micromata.hibernate.web.HistoryTableEntry" interface="false" size="0" bugs="1" priority_3="1"/>
+    </PackageStats>
+    <PackageStats package="de.micromata.hibernate" total_bugs="10" total_types="6" total_size="0" priority_3="9" priority_2="1">
+      <ClassStats class="de.micromata.hibernate.AbstractInterceptor" interface="false" size="0" bugs="2" priority_3="1" priority_2="1"/>
+      <ClassStats class="de.micromata.hibernate.DeltaSetCalculator" interface="false" size="0" bugs="3" priority_3="3"/>
+      <ClassStats class="de.micromata.hibernate.HistoryAdapter" interface="false" size="0" bugs="3" priority_3="3"/>
+      <ClassStats class="de.micromata.hibernate.HistoryAdapter$1" interface="false" size="0" bugs="0"/>
+      <ClassStats class="de.micromata.hibernate.HistoryInterceptor" interface="false" size="0" bugs="1" priority_3="1"/>
+      <ClassStats class="de.micromata.hibernate.HistoryInterceptor$1" interface="false" size="0" bugs="1" priority_3="1"/>
+    </PackageStats>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

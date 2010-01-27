@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<document>
+
+  <properties>
+    <title>Änderungshistorie über Hibernate-Interceptoren</title>
+    <author email="w.jung@micromata.de">Wolfgang Jung</author>
+  </properties>
+  <body>
+    <section name="Installation">
+      <p>
+        Der History-Interceptor kann in Spring einfach integriert werden:
+        <source><![CDATA[
+  <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+    <property name="mappingResources">
+      <value>${hibernate.mappings}</value>
+    </property>
+    <property name="hibernateProperties">
+      <props>
+        <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+        <prop key="hibernate.show_sql">false</prop>
+        <prop key="hibernate.use_outer_join">true</prop>
+        <prop key="hibernate.max_fetch_depth">2</prop>
+        <prop key="hibernate.jdbc.batch_size">0</prop>
+        <prop key="hibernate.cglib.use_reflection_optimizer">true</prop>
+        <prop key="hibernate.jdbc.fetch_size">100</prop>
+        <prop key="hibernate.statement_cache.size">30</prop>
+      </props>
+    </property>
+    <property name="dataSource">
+      <ref bean="dataSource"/>
+    </property>
+    <!-- never run a schema update on the database -->
+    <property name="schemaUpdate">
+      <value>true</value>
+    </property>
+    <property name="entityInterceptor">
+      <ref bean="hibernateHistoryInterceptor"/>
+    </property>
+  </bean>
+
+  <bean name="hibernateHistoryInterceptor" 
+        class="de.micromata.hibernate.history.HistoryInterceptor" 
+        lazy-init="false">
+    <constructor-arg>
+      <bean class="de.micromata.user.HistoryUser"/>
+    </constructor-arg>
+    <!-- optional, delegation an weiteren Interceptor
+    <property name="delegateInterceptor">
+      <ref bean="hibernateSpringInterceptor"/>
+    </property>    
+    -->
+    <property name="sessionFactoryBeanName">
+      <value>sessionFactory</value>
+    </property>    
+  </bean>
+  
+  ]]></source>  
+  	Wichtig! Der Interzeptor benötigt als Konstruktorargument eine Instanz des Interfaces HistoryUserRetriever. Diese
+  	muss eine Stringdarstellung des Namens liefern, der die Änderung vornimmt.</p>
+    <p>
+    In der aktuellen Version kann über HistoryInterceptor.setComment() ein Kommentar für die aktuelle Transaktion angegeben 
+    werden.
+    </p>
+  	  <p>
+  	    Eine mögliche Implementierung verwendet das Micromata usermgmt Modul:
+  	    <source><![CDATA[
+public class HistoryUser implements HistoryUserRetriever
+{
+  /**
+   * get the principal from the ThreadLocal
+   * 
+   * @see de.micromata.hibernate.history.HistoryUserRetriever#getPrincipal()
+   */
+  public String getPrincipal()
+  {
+    UserDO user = (UserDO)ContextHolder.getUserInfo();
+    if (user == null) {
+      return null;
+    }
+    if (RunAsAdapter.isRealUser() == true) {
+      return user.getPk().toString();
+    }
+    UserDO realUser = RunAsAdapter.getRealUser() instanceof UserDO ? (UserDO) RunAsAdapter.getRealUser() : null;
+    if (realUser != null) {
+      return realUser.getPk() + "," + user.getPk();
+    }
+    return user.getPk().toString();
+  }
+}]]></source>
+  	  </p>
+    </section>
+    <section title="Laden der History">
+      <p>
+        Über die Klasse HistoryAdapter können die Änderungen eines Objektes geladen werden:
+  	    <source><![CDATA[
+Integer primaryKey = new Integer(1);  	    
+HistoryEntry[] hist = historyAdapter.getHistoryEntries(SampleDO.class, primaryKey);
+}]]></source>			
+        Die gelieferten Einträge sind dabei zeitlich aufsteigend sortiert.
+      </p>
+    </section>
+  </body>
+</document>
+    
