@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list id="1">
+  <de.micromata.hib3.model.UserDO id="2">
+    <name>Bar</name>
+    <groups id="3">
+      <de.micromata.hib3.model.GroupDO id="4">
+        <name>Foo</name>
+      </de.micromata.hib3.model.GroupDO>
+    </groups>
+    <mainGroup class="de.micromata.hib3.model.GroupDO" reference="4"/>
+  </de.micromata.hib3.model.UserDO>
+  <de.micromata.hib3.model.UserDO id="5">
+    <name>Baz</name>
+    <groups id="6">
+      <de.micromata.hib3.model.GroupDO id="7">
+        <name>FooBaz</name>
+      </de.micromata.hib3.model.GroupDO>
+    </groups>
+    <mainGroup class="de.micromata.hib3.model.GroupDO" id="8">
+      <name>Bar</name>
+    </mainGroup>
+  </de.micromata.hib3.model.UserDO>
+  <de.micromata.hib3.model.GroupDO reference="4"/>
+  <de.micromata.hib3.model.GroupDO reference="7"/>
+  <de.micromata.hib3.model.GroupDO reference="8"/>
+</list>
