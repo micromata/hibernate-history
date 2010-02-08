@@ -50,7 +50,7 @@ import de.micromata.hibernate.spring.AbstractInterceptor;
 /**
  * The <code>HistoryInterceptor</code> record chages of specific entities in to a table.
  * <p>
- * It creates entries of the table T_HISTORY which records changes of entities which has the <code>Historizable</code> interface
+ * It creates entries of the table T_HISTORY_ENTRY which records changes of entities which has the <code>Historizable</code> interface
  * implemented.
  * </p>
  * <p>

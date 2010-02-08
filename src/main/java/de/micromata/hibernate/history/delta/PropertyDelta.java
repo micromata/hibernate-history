@@ -46,8 +46,8 @@ import org.hibernate.metadata.ClassMetadata;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "clazz", discriminatorType = DiscriminatorType.STRING)
-@Table(name = "T_HISTORY_ENTRY")
-@org.hibernate.annotations.Table(appliesTo = "T_HISTORY_ENTRY", indexes = { @Index(name = "IDX_REF_HIST_ENTITY", columnNames = { "HISTORY_ID_FK"})})
+@Table(name = "T_HISTORY_PROPERTY_DELTA")
+@org.hibernate.annotations.Table(appliesTo = "T_HISTORY_PROPERTY_DELTA", indexes = { @Index(name = "IDX_REF_HIST_ENTITY", columnNames = { "HISTORY_ID_FK"})})
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public abstract class PropertyDelta
 {
@@ -65,7 +65,7 @@ public abstract class PropertyDelta
 
   @Id
   @GeneratedValue
-  @Column(name = "HISTORY_ENTRY_ID")
+  @Column(name = "ID")
   public final Integer getId()
   {
     return id;
