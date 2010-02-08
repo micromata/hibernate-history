@@ -18,6 +18,7 @@ import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -338,6 +339,9 @@ public class DeltaSetCalculator
       Date d1 = (Date) obj1;
       Date d2 = (Date) obj2;
       return d1.equals(d2) || d2.equals(d1);
+    } else if (BigDecimal.class.isAssignableFrom(obj1.getClass()) == true) {
+      // Use compareTo instead of equals (for ignoring the scale):
+      return ((BigDecimal)obj1).compareTo((BigDecimal)obj2) == 0;
     } else {
       log.debug("Checking [" + obj1 + "] against [" + obj2 + "]");
       return areEntitiesEqual(obj1, obj2, sf);

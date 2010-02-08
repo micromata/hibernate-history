@@ -41,8 +41,8 @@ import de.micromata.hibernate.history.delta.PropertyDelta;
  * @author Wolfgang Jung (w.jung@micromata.de)
  */
 @Entity
-@Table(name = "T_HISTORY")
-@org.hibernate.annotations.Table(appliesTo = "T_HISTORY", indexes = { @Index(name = "IDX_HIST_ENTITY", columnNames = { "MODIFIED_ID",
+@Table(name = "T_HISTORY_ENTRY")
+@org.hibernate.annotations.Table(appliesTo = "T_HISTORY_ENTRY", indexes = { @Index(name = "IDX_HIST_ENTITY", columnNames = { "MODIFIED_ID",
     "CLASSNAME"})})
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public class HistoryEntry
@@ -94,7 +94,7 @@ public class HistoryEntry
 
   @Id
   @GeneratedValue
-  @Column(name = "HISTORY_ID")
+  @Column(name = "ID")
   public Integer getId()
   {
     return id;
